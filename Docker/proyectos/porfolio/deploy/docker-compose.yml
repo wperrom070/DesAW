@@ -3,6 +3,6 @@ services:
     build: # Compilar la imagen a partir del Dockerfile
     context: .. # Raiz del proyecto 
     dockerfile: Dockerfile 
-  container_name: ctporfolio
+  container_name: ctporfolioDAW
   ports:
-    - "8810:80"
+    - "8820:80"
