@@ -9,6 +9,9 @@ RUN useradd -rm -d /home/wendy/ -s /bin/bash wendy
 # Para crear el password usamos el comando chpasswd
 RUN echo "wendy:1234" | chpasswd
 
+# Directorio de trabajo dentro del contenedor Apache
+WORKDIR /var/www/html 
+COPY ./src .
 # Activamos el puerto 80 de apache
 EXPOSE 80
 # Ejecutamos apache en primer plano cuando se inicie el contenedor
