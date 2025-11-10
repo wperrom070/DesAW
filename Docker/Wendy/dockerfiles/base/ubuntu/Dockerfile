@@ -5,5 +5,7 @@ RUN apt update && apt install -yq --no-install-recommends \
     nano \
     net-tools iputils-ping 
 
-#Mantener vivo el contenedor
-CMD [ "tall -f /dev/null" ]
+# Mantener vivo el contenedor
+# Tail es un comando que nunca acaba sin ejecución 
+CMD [ "tail -f /dev/null" ]
+
