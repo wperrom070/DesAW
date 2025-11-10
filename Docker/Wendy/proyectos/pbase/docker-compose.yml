@@ -3,4 +3,6 @@ services:
     build: 
     # ruta a traves de la cual desde cualquier proyecto
     # se tiene acceso a cualquier imagen(DockerFile), recurso 
-      context:
+      context: /home/wendy/devops/DespAW/Docker/Wendy
+      dockerfile: ./dockerfile/base/ubuntu/Dockerfile
+  container_name: ctbaseDAW_wendy
